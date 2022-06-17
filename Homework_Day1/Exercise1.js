@@ -5,3 +5,7 @@ dữ liệu nhận vào là một **`number` và dữ liệu đầu ra là một
 32 ⇒ "32nd"
 208 ⇒ "208th"
 403 ⇒ "403rd" */
+
+function humanizeFormat(number) {
+  if (typeof number !== "number") return false;
+}
