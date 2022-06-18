@@ -1,20 +1,17 @@
-/* Bài 2 Repeat String
+/* Bài 3
+Xóa các phần tử trùng trong mảng một chiều */
 
-Viết hàm Javascript thõa mãn yêu cầu sau.
+function deleteDuplicatedElement(arr) {
+    if(!Array.isArray(arr)) return false;
 
-Hàm sẽ nhận 2 tham số đầu vào: chuỗi **`str`** cần repeat 
-và count là số lần `**repeat**` */
+    let newArr = [];
 
-function repeatString(str, count) {
-    if (typeof str !== 'string' || typeof count !== 'number') return false;
-
-    let newStr = '';
-
-    for (let i = 0; i < count; i++) {
-        newStr += str;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== arr[i+1]) {
+            newArr.push(arr[i]);
+        }
     }
-
-    return newStr;
+    return newArr;
 }
 
-console.log(repeatString("Duyn", 3));
+console.log(deleteDuplicatedElement([1,1,1,2,3,4,5,2,3,4,5,2,3,4]));
