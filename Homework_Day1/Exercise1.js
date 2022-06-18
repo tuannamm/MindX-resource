@@ -15,4 +15,13 @@ function humanizeFormat(number) {
   if (lastDigitNumber === 1) return `${number}st`;
   if (lastDigitNumber === 2) return `${number}nd`;
   if (lastDigitNumber === 3) return `${number}rd`;
+
+  return `${number}th`;
 }
+
+console.log(humanizeFormat(111));
+console.log(humanizeFormat(322));
+console.log(humanizeFormat(393));
+console.log(humanizeFormat(198));
+console.log(humanizeFormat());
+
