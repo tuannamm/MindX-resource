@@ -10,7 +10,12 @@ const users = [
 ];
 
 function problem1(arr) {
-  if (!Array.is(arr)) return false;
+  if (!Array.isArray(arr)) return false;
 
-  let res = arr.map();
+  let res = arr.map((users) => {
+    return `<div><h1>${users.name}</h1><h2>${users.age}</h2></div>`;
+  });
+
+  return res;
 }
+console.log(problem1(users));
