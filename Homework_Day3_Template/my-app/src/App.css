@@ -12,18 +12,38 @@
   display: flex;
   justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav_header {
+  display: flex;
+  list-style-type: none;
+  padding: 12px 24px;
+  width: 368px;
+  line-height: 19px;
+}
+/* HEADER */
+li {
+  padding: 15px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider-image {
+  width: 110%;
+  height: auto;
+}
+
+/* BODY */
+.body {
+  margin: 40px;
+}
+.searchButton {
+  width: 30%;
+  height: 35px;
+}
+.menu_left {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.post-item {
+  width: 235px;
+  height: 250px;
+  background-color: aqua;
 }
